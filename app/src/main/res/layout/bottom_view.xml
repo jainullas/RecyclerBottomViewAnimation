@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_sort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        app:layout_widthPercent="50%">
+
+        <TextView
+            android:id="@+id/text_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Sort"
+            android:textColor="#757F7E"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_sort"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/text_sort"
+            android:src="@drawable/sort_icon"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_divider"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/layout_sort"
+        android:orientation="vertical"
+        app:layout_widthPercent="1%">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#E8E7E7" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_filter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/layout_divider"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="visible"
+        app:layout_widthPercent="50%">
+
+        <TextView
+            android:id="@+id/text_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Filters"
+            android:textColor="#757F7E"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_cart"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@+id/text_filter"
+            android:layout_toLeftOf="@+id/text_filter"
+            android:src="@drawable/filter_icon_gray" />
+        
+    </RelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
